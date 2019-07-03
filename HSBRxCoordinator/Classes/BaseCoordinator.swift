@@ -24,13 +24,13 @@ open class BaseCoordinator<ResultType> {
         childCoordinators[coordinator.identifier] = nil
     }
     
-    public func coordinate<T>(to coordinator: BaseCoordinator<T>) -> Observable<T> {
+    open func coordinate<T>(to coordinator: BaseCoordinator<T>) -> Observable<T> {
         store(coordinator: coordinator)
         return coordinator.start()
             .do(onNext: { [weak self] _ in self?.free(coordinator: coordinator) })
     }
     
-    public func start() -> Observable<ResultType> {
+    open func start() -> Observable<ResultType> {
         fatalError("Start method should be implemented.")
     }
 }
