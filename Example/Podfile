@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HSBRxCoordinator_Example' do
+  pod 'HSBRxCoordinator', :path => '../'
+
+  target 'HSBRxCoordinator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
