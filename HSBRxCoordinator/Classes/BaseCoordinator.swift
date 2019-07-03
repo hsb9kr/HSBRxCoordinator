@@ -10,11 +10,15 @@ import RxSwift
 
 open class BaseCoordinator<ResultType> {
     
-    public typealias CoordinationResult = ResultType
+    typealias CoordinationResult = ResultType
     
-    let disposeBag = DisposeBag()
+    public let disposeBag = DisposeBag()
     private let identifier = UUID()
     private var childCoordinators = [UUID: Any]()
+    
+    public init() {
+        
+    }
     
     private func store<T>(coordinator: BaseCoordinator<T>) {
         childCoordinators[coordinator.identifier] = coordinator

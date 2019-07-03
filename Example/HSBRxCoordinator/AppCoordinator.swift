@@ -8,7 +8,18 @@
 
 import UIKit
 import HSBRxCoordinator
+import RxSwift
 
 class AppCoordinator: BaseCoordinator<Void>  {
     
+    private let window: UIWindow
+        
+    init(window: UIWindow) {
+
+        self.window = window
+    }
+    
+    override func start() -> Observable<Void> {
+        return .never()
+    }
 }
