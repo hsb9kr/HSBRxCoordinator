@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B95BF3ACCDAC65B921277E0C /* Pods_HSBRxCoordinator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF933776CC8E2DF986FDD1E /* Pods_HSBRxCoordinator_Example.framework */; };
+		CC62788322CC92EE00EC88DD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62788222CC92EE00EC88DD /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		891100AA606DDD93C36A07AC /* Pods_HSBRxCoordinator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSBRxCoordinator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26235F91B1468AD2DF27334 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CC62788222CC92EE00EC88DD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EEF933776CC8E2DF986FDD1E /* Pods_HSBRxCoordinator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSBRxCoordinator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82F88D3DB1AA8CD9CE4D842 /* Pods-HSBRxCoordinator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSBRxCoordinator_Example.release.xcconfig"; path = "Target Support Files/Pods-HSBRxCoordinator_Example/Pods-HSBRxCoordinator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F8FD21C6623D4EF3A6EB8F39 /* Pods-HSBRxCoordinator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HSBRxCoordinator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HSBRxCoordinator_Tests/Pods-HSBRxCoordinator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				CC62788222CC92EE00EC88DD /* AppCoordinator.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC62788322CC92EE00EC88DD /* AppCoordinator.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
