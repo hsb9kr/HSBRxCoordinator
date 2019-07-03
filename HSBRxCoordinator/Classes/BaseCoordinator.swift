@@ -8,9 +8,9 @@
 import Foundation
 import RxSwift
 
-class BaseCoordinator<ResultType> {
+open class BaseCoordinator<ResultType> {
     
-    typealias CoordinationResult = ResultType
+    public typealias CoordinationResult = ResultType
     
     let disposeBag = DisposeBag()
     private let identifier = UUID()
@@ -24,13 +24,13 @@ class BaseCoordinator<ResultType> {
         childCoordinators[coordinator.identifier] = nil
     }
     
-    func coordinate<T>(to coordinator: BaseCoordinator<T>) -> Observable<T> {
+    public func coordinate<T>(to coordinator: BaseCoordinator<T>) -> Observable<T> {
         store(coordinator: coordinator)
         return coordinator.start()
             .do(onNext: { [weak self] _ in self?.free(coordinator: coordinator) })
     }
     
-    func start() -> Observable<ResultType> {
+    public func start() -> Observable<ResultType> {
         fatalError("Start method should be implemented.")
     }
 }
